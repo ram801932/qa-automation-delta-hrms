@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestData>
+	<GenericData>
+		<TDID>1</TDID>
+		<EmpUserName>vkotha@deltaintech.com</EmpUserName>
+        <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+		<HrMangerUserName>skoppineni@deltaintech.com</HrMangerUserName>
+		<Password>staging@123</Password>
+  </GenericData>
+  
+  <AppraisalsEndtoEnd>
+    <TDID>1</TDID>
+    <EmpUserName>ugadiraju@deltaintech.com</EmpUserName>
+    <ManagerUserName>skomma@deltaintech.com</ManagerUserName>
+    <HrMangerUserName>skoppineni@deltaintech.com</HrMangerUserName>
+    <Password>staging@123</Password>
+    <BusinessUnit>APS</BusinessUnit>
+    <Department>QA</Department>
+    <FromYear>2019</FromYear>
+    <ToYear>2020</ToYear>
+    <Date></Date>
+    <EnableTo>Employees</EnableTo>
+    <Rating>1-5</Rating>
+    <Mode>Yearly</Mode>
+    <employeename>Usha Jyothirmai Gadiraju</employeename>
+  </AppraisalsEndtoEnd>
+  
+  <EmployeeSelfAppraisals>
+    EmployeeSelfAppraisals
+    <TDID>1</TDID>
+    <EmpUserName>dnallabilli@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+     </EmployeeSelfAppraisals>
+  
+  <SelfServiceValidateMyDetails>
+    <TDID>1</TDID>
+    <EmpUserName>vmoram@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <EmpCode>DTMS1143</EmpCode>
+    <CandidateName>Vijay Kumar Moram</CandidateName>
+    <BusinessUnit>RSI</BusinessUnit>
+    <ReportingManager>Nagendra Ragu</ReportingManager>
+    <JobTitle>Senior QA Automation Engineer-Selenuim</JobTitle>
+    <DateOfJoining>13-08-2018</DateOfJoining>
+    <Email>vmoram@deltaintech.com</Email>
+    </SelfServiceValidateMyDetails>
+  
+  <HRAddNewEmployee>
+    <TDID>1</TDID>
+    <HrMangerUserName>skoppineni@deltaintech.com</HrMangerUserName>
+    <Password>staging@123</Password>
+    <Prefix>Mr</Prefix>
+    <firstName>Employee</firstName>
+    <lastName>Automation</lastName>
+    <modeEmp>Direct</modeEmp>
+    <role>Employee</role>
+    <email></email>
+    <busUnit>CWY</busUnit>
+    <dept>CWY</dept>
+    <repManager>Ankit Sanval , Delivery Manager</repManager>
+    <emplStatus>Probation</emplStatus>
+    <holidayGrp>Delta-technologies h</holidayGrp>
+    <gender>Male</gender>
+    <maritalStatus>Single</maritalStatus>
+    <nationality>Indian</nationality>
+    <ethinicCode>Indian</ethinicCode>
+    <raceCode>Mongoloid</raceCode>
+    <language>English</language>
+    <date>21-01-1990</date>
+    <BloodGrp>O +ve</BloodGrp>
+    <persEmail>test@test.com</persEmail>
+    <streetAdd>Suryakantha mansion, Gafoor Nagar, madhapur</streetAdd>
+    <country>India</country>
+    <state>Telangana</state>
+    <city>Hyderabad</city>
+    <postalCode>500081</postalCode>
+    <skillName>Automation Testing</skillName>
+    <expYears>3</expYears>
+    <skillLevel>Advanced</skillLevel>
+    <compName>Cognizant Technologies</compName>
+    <compWeb>www.cognizant.com</compWeb>
+    <designation>Sr Automation Engineer</designation>
+    <fromDate>01-08-2018</fromDate>
+    <toDate>01-07-2020</toDate>
+    <reasonForLeaveing>Better Carrier</reasonForLeaveing>
+    <refName>Test Refernce</refName>
+    <refContact>9999999999</refContact>
+    <refEmail>test@test.com</refEmail>
+    <eduLevel>Graduation</eduLevel>
+    <instName>JNTU Hyderabad</instName>
+    <course>B.TECH</course>
+    <edufromDate>11-08-2014</edufromDate>
+    <edutoDate>25-05-2018</edutoDate>
+    <percentage>78</percentage>
+  </HRAddNewEmployee>
+
+  <ManageHolidayGroup>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <HolidayGroup>Test Automation</HolidayGroup>
+  </ManageHolidayGroup>
+
+  <ManageHolidaysAddNewHoliday>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <HolidayName>Test Automation</HolidayName>
+    <HolidayGroup>Delta-technologies h</HolidayGroup>
+  </ManageHolidaysAddNewHoliday>
+
+  <AddLeaveManagementOptions>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <businessUnit>ATG</businessUnit>
+    <dept>ATS</dept>
+    <startMnth>January</startMnth>
+    <weekend1>Saturday</weekend1>
+    <weekend2>Sunday</weekend2>
+    <wrkingHrs>8</wrkingHrs>
+    <hlfDayReq>Yes</hlfDayReq>
+    <leaveTransfer>Yes</leaveTransfer>
+    <skipHolidays>Yes</skipHolidays>
+    <hrManager>Pradeep Kumar Joga</hrManager>
+    <description>Leave Management Options - Test Automation</description>
+  </AddLeaveManagementOptions>
+
+  <AddJobTitle>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <titleCode>Auto007</titleCode>
+    <titleName>Sr Automation Tester</titleName>
+    <jobDesc>Selenium c# Autmation Engineer</jobDesc>
+    <minExpReq>3</minExpReq>
+    <jobPayGrdCode>A</jobPayGrdCode>
+    <jobPayFreq>Monthly</jobPayFreq>
+    <comments>Test Automation - Job Titles</comments>
+  </AddJobTitle>
+
+  <AddPositions>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <jobTitle>Testing</jobTitle>
+    <positionName>Automation Testing</positionName>
+    <description>Created thru Automation</description>
+  </AddPositions>
+
+  <PinToShortCutPositions>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+  </PinToShortCutPositions>
+
+  <AddNewRoleInRolesAndPrivileges>
+    <TDID>1</TDID>
+    <EmpUserName>sundeep@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <roleName>Automation Tester</roleName>
+    <roleType>Automation</roleType>
+    <description>Added thru Test Automation</description>
+    <hirarchy>Employees</hirarchy>
+  </AddNewRoleInRolesAndPrivileges>
+
+  <SelfServiceWebCheckInCheckOut>
+    <TDID>1</TDID>
+    <EmpUserName>vmoram@deltaintech.com</EmpUserName>
+    <Password>staging@123</Password>
+    <HrUserName>pjoga@deltaintech.com</HrUserName>
+    <EmpName>Vijay Kumar Moram , Senior QA Automation Engineer-Selenuim</EmpName>
+    <SelectByType>Employee</SelectByType>
+    <Status>Active</Status>
+  </SelfServiceWebCheckInCheckOut>
+
+  <RecruitmentsEndToEndScenario>
+    <TDID>1</TDID>
+    <HrUserName>skoppineni@deltaintech.com</HrUserName>
+    <Approver1>sundeep@deltaintech.com</Approver1>
+    <ManagerUserId>skomma@deltaintech.com</ManagerUserId>
+    <Password>staging@123</Password>
+    <busUnit>APS</busUnit>
+    <dept>QA</dept>
+    <reportingManager>Sravan Kumar Komma , Lead - QA</reportingManager>
+    <approver1>Sundeep Chebrolu , Director</approver1>
+    <jobTitle>QA Engineer</jobTitle>
+    <position>QA Engineer</position>
+    <noOfPositions>1</noOfPositions>
+    <billingType>Client Paid</billingType>
+    <posType>New</posType>
+    <minExpReq>3</minExpReq>
+    <Approver1Status>Approved</Approver1Status>
+    <firstName>Automation</firstName>
+    <lastName>Script</lastName>
+    <candidateName>Automation Script</candidateName>
+    <source>Naukri</source>
+    <email>tester1@test.com</email>
+    <contactNo>8888888888</contactNo>
+    <skillSet>QA Engineer with Automation, Manual</skillSet>
+    <location>Delta HQ</location>
+    <interviewType>In person</interviewType>
+    <time>12:30</time>
+    <interviewName>Round 1</interviewName>
+    <Interviewr1status>Selected</Interviewr1status> 
+    <feedbackDesc>Good Prospect</feedbackDesc>
+    <interviewStatus>Complete</interviewStatus>
+    <candidateStatus>Shortlisted</candidateStatus>
+  
+  </RecruitmentsEndToEndScenario>
+
+  <CreateRequisition>
+  <TDID>1</TDID>
+    <HrUserName>skoppineni@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <busUnit>APS</busUnit>
+    <dept>QA</dept>
+    <reportingManager>Sravan Kumar Komma , Lead - QA</reportingManager>
+    <approver1>Aditi Chebrolu , Director</approver1>
+    <jobTitle>QA Engineer</jobTitle>
+    <position>QA Engineer</position>
+    <noOfPositions>1</noOfPositions>
+    <billingType>Client Paid</billingType>
+    <posType>New</posType>
+    <minExpReq>3</minExpReq>
+</CreateRequisition>
+
+  <AddingCandidates>
+   <TDID>1</TDID>
+    <HrUserName>skoppineni@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <reqCode>Not Applicable Candidate</reqCode>
+    <firstName>Automation</firstName>
+    <lastName>Script</lastName>
+    <source>Naukri</source>
+    <email>test@test.com</email>
+    <contactNo>9999999999</contactNo>
+    <skillSet>QA Engineer with Automation, Manual</skillSet>
+ </AddingCandidates>
+
+  <AddingInterviews>
+  <TDID>1</TDID>
+  <HrUserName>skoppineni@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <reqCode>Not Applicable Candidate</reqCode>
+    <CandidateName>Not Applicable Candidate</CandidateName>
+    <location>Delta HQ</location>
+    <interviewType>In Person</interviewType>
+    <time>12:30</time>
+    <interviewName>Round 1</interviewName>
+</AddingInterviews>
+
+  <RecruitmentsInterviewRounds>
+  <TDID>1</TDID>
+  <UserName>skomma@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+    <reqCode>Not Applicable Candidate</reqCode>
+    <CandidateName>Not Applicable Candidate</CandidateName>
+    <interviewName>Round 1</interviewName>
+    <Interviewr1status>Selected</Interviewr1status> 
+    <feedbackDesc>Good Prospect</feedbackDesc>
+</RecruitmentsInterviewRounds>
+
+  <HRCreatePaternityLeaveOnBehalfOfEmployee>
+    <TDID>1</TDID>
+    <HrUserName>ksharma@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <EmpName>Santosh Reddy Bolledla</EmpName>
+    <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+  </HRCreatePaternityLeaveOnBehalfOfEmployee>
+
+  <HrCreateMaternityLeaveOnBehalfOfFemaleEmployee>
+    <TDID>1</TDID>
+    <HrUserName>ksharma@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <EmpName>Navya Cherukuri</EmpName>
+    <ManagerUserName>ggedela@deltaintech.com</ManagerUserName>
+  </HrCreateMaternityLeaveOnBehalfOfFemaleEmployee>
+
+  <AddNewBusinessUnitAndDepartment>
+    <TDID>1</TDID>
+    <UserName>sundeep@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+    <busUnit>TST</busUnit>
+    <dept>TST</dept>
+  </AddNewBusinessUnitAndDepartment>
+
+  <ManagerPrintAppraisalsRating>
+  <TDID>1</TDID>
+  <UserName>sundeep@deltaintech.com</UserName>
+  <Password>staging@123</Password>
+  <docName>Usha_Jyothirmai_Gadiraju_2019_2020_Y1</docName>
+</ManagerPrintAppraisalsRating>
+
+  <EmpApplyEarnedLeaveSickLeaveCombined>
+    <TDID>1</TDID>
+    <UserName>vmoram@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+  </EmpApplyEarnedLeaveSickLeaveCombined>
+
+  <EmpApplyLeaveCancelUnapproved>
+    <TDID>1</TDID>
+    <UserName>sbolledla@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+  </EmpApplyLeaveCancelUnapproved>
+
+  <EmployeeCancelApprovedLeave>
+    <TDID>1</TDID>
+    <UserName>lperumalla@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+    <EmpName>Laxman Rao Perumalla</EmpName>
+    <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+  </EmployeeCancelApprovedLeave>
+
+  <EmpOnProbationApplySickCasualLeave>
+    <TDID>1</TDID>
+    <UserName>rpoloju@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+  </EmpOnProbationApplySickCasualLeave>
+
+  <EmpRegularizeAttendanceRequest>
+    <TDID>1</TDID>
+    <UserName>vmoram@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+    <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+    <EmpName>Vijay Kumar Moram</EmpName>
+    <CheckIn>12:30</CheckIn>
+    <CheckOut>21:30</CheckOut>
+  </EmpRegularizeAttendanceRequest>
+
+  <HrApplyCompensatoryLeave>
+    <TDID>1</TDID>
+    <HrUserName>ksharma@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+    <EmpName>Vijay Kumar Moram</EmpName>
+  </HrApplyCompensatoryLeave>
+
+  <HrApplyImpersonateLeave>
+    <TDID>1</TDID>
+    <HrUserName>ksharma@deltaintech.com</HrUserName>
+    <Password>staging@123</Password>
+    <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+    <EmpName>Vijay Kumar Moram</EmpName>
+  </HrApplyImpersonateLeave>
+
+  <HrCancelApprovedLeave>
+    <TDID>1</TDID>
+    <UserName>aabbireddy@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+    <ManagerUserName>draju@deltaintech.com</ManagerUserName>
+    <EmpName>Ananda Reddy Abbi Reddy</EmpName>
+    <HrMangerUserName>skoppineni@deltaintech.com</HrMangerUserName>
+  </HrCancelApprovedLeave>
+
+  <ManagerApporveAppliedLeave>
+    <TDID>1</TDID>
+    <UserName>gmandapuram@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+    <EmpName>Gopika Rani Mandapuram</EmpName>
+    <ManagerUserName>nragu@deltaintech.com</ManagerUserName>
+  </ManagerApporveAppliedLeave>
+
+  <SelfServiceAddWebCheckInToShortCut>
+    <TDID>1</TDID>
+    <UserName>vmoram@deltaintech.com</UserName>
+    <Password>staging@123</Password>
+  </SelfServiceAddWebCheckInToShortCut>
+
+  <ViewEditEmployeeDetails>
+    <TDID>1</TDID>
+    <HrMangerUserName>skoppineni@deltaintech.com</HrMangerUserName>
+    <Password>staging@123</Password>
+    <SearchEmpBy>Employee Name</SearchEmpBy>
+    <EmpName>Pooja Gupta</EmpName>
+    <EmpFirstName>Pooja</EmpFirstName>
+    <EditedEmpName>Poojass Gupta</EditedEmpName>
+    <EditedEmpFirstName>Poojass</EditedEmpFirstName>
+  </ViewEditEmployeeDetails>
+</TestData>

@@ -1,0 +1,3321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationPages>
+  <Module name="DeltaHRMS">
+    <Page name="Generic">
+      <!-- Pramiterise the sidebar main option button name-->
+      <Object name="SideBarMenu">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='sidebar-wrapper']//li[starts-with(@class,'clickable_menu') and contains(.,'{0}')]</Value>
+        </Browser>
+      </Object>
+      <!-- Pramiterise the sidebar main option button name-->
+      <Object name="SideBarMenuHidden">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu ']//li[contains(.,'{0}')]/span[@class = 'acc_li_toggle']</Value>
+        </Browser>
+      </Object>
+      <!-- Pramiterise the sidebar main option button name & Sub Menu side bar name -->
+      <Object name="SideBarSubMenu">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu ']//span[contains(.,'{0}')]/following-sibling::ul/li[contains(.,'{1}')]</Value>
+        </Browser>
+      </Object>
+      <Object name="SideBarMenuHideShow">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='sidebar-wrapper']//ul[@id='sidebar_menu']</Value>
+        </Browser>
+      </Object>
+      <Object name="SideBarMenuActive">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'wrappernew' and @class ='active']</Value>
+        </Browser>
+      </Object>
+      <!-- Prameter the Shortcut button Name-->
+      <Object name="ShortcutButtons">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='short-text-ctrl']//li/a[@title = '{0}']</Value>
+        </Browser>
+      </Object>
+      <Object name="DisplayedMessage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='messageData']/div/span - displayed message</Value>
+        </Browser>
+      </Object>
+      <Object name="LoadingCircle">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class = 'blockUI blockMsg blockPage']//img[@alt='Loading']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="CreateLeaveDatePicker">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='ui-datepicker-div']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCalanderPrevMonth">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='ui-datepicker-div']//a[@title = 'Prev']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCalanderNextMonth">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='ui-datepicker-div']//a[@title = 'Next']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCalanderSelectMonth">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@data-handler='selectMonth']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCalanderSelectYear">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@data-handler='selectYear']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCalanderTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//table[@class ='ui-datepicker-calendar']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCalanderDates">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//table[@class ='ui-datepicker-calendar']//tbody/tr/td</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateShortCutBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='pageshortcutdiv']/div</Value>
+        </Browser>
+      </Object>
+        <Object name="SubmitButton">
+          <Browser Value="chrome">
+            <FindBy>XPath</FindBy>
+            <Value>//input[@id='submitbutton']</Value>
+          </Browser>
+      </Object>
+      <Object name="PopUpOkButton">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'popup_container']//div[@id = 'popup_panel']/input[@id = 'popup_ok']</Value>
+        </Browser>
+      </Object>
+    </Page>
+    <Page name="Login">
+      <Object name="UserName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='username']</Value>
+        </Browser>
+      </Object>
+      <Object name="Password">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='password']</Value>
+        </Browser>
+      </Object>
+      <Object name="LoginSubmit">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='loginsubmit']</Value>
+        </Browser>
+      </Object>
+    </Page>
+    <Page name="Home">
+      <Object name="HomeMenuBar">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='sidebar-wrapper']</Value>
+        </Browser>
+      </Object>
+      <Object name="NotificationAlertPopUp">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable']</Value>
+        </Browser>
+      </Object>
+      <Object name="NotificationAlertPopUpCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@class ='ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close']</Value>
+        </Browser>
+      </Object>
+      <Object name="NavToDashboardBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='home_menu']//ul/li[contains(.,'Dashboard')]</Value>
+        </Browser>
+      </Object>
+      <Object name="NavToSelfServiceBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu-thumbnail']//li[contains(.,'Self Service')]</Value>
+        </Browser>
+      </Object>
+      <Object name="NavToHRBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu-thumbnail']//li[contains(.,'HR')]</Value>
+        </Browser>
+      </Object>
+      <Object name="NavToAppraisalsBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu-thumbnail']//li[contains(.,'Appraisals')]</Value>
+        </Browser>
+      </Object>
+      <Object name="NavToRecruitmentsBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu-thumbnail']//li[contains(.,'Recruitments')]</Value>
+        </Browser>
+      </Object>
+      <Object name="NavToOrganizationBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='side-menu-thumbnail']//li[contains(.,'Organization')]</Value>
+        </Browser>
+      </Object>
+
+      <Object name="DBViewMyTeamBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Team')]/a[contains(.,'View My Team')]</Value>
+        </Browser>
+      </Object>
+      <Object name="DBMyTeamTotal">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Team')]/h4/div</Value>
+        </Browser>
+      </Object>
+      <Object name="DBMyTeamActive">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Team')]/a[contains(.,'Active')]//span</Value>
+        </Browser>
+      </Object>
+      <Object name="DBMyTeamInactive">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Team')]/a[contains(.,'Inactive')]//span</Value>
+        </Browser>
+      </Object>
+      <Object name="DBAvailableLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'Leaves Available')]/h4/span</Value>
+        </Browser>
+      </Object>
+      <Object name="DBApplyLeavebtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'Leaves Available')]/a</Value>
+        </Browser>
+      </Object>
+      <Object name="DBViewAllPendingLeavesBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'Pending Leave(s)')]/a</Value>
+        </Browser>
+      </Object>
+      <Object name="DBPendingLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'Pending Leave(s)')]/h4/span</Value>
+        </Browser>
+      </Object>
+      <Object name="DBApproveLeavesBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'Leaves Pending For Approval')]/a</Value>
+        </Browser>
+      </Object>
+      <Object name="DBPendingLeavesForApproval">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'Leaves Pending For Approval')]/h4/span</Value>
+        </Browser>
+      </Object>
+      <Object name="DBViewHolidaysBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Holiday Calendar')]//a</Value>
+        </Browser>
+      </Object>
+      <Object name="DBViewHolidaysRows">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Holiday Calendar')]//ul/li</Value>
+        </Browser>
+      </Object>
+      <Object name="DBMyDetailsBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Details')]//a</Value>
+        </Browser>
+      </Object>
+      <Object name="DBMyDetailsRows">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left_dashboard']/div[contains(.,'My Details')]//ul/li</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateNewRequestBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='wrapper-dropdown-sf']</Value>
+        </Browser>
+      </Object>
+      <!-- Parameter with the Drop Down list name to select -->
+      <Object name="CreateNewRequestDropDownList">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//ul[@class='dropdown']/li[contains(.,'{0}')]</Value>
+        </Browser>
+      </Object>
+      <Object name="UserProfileBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//a[@id= 'logoutbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="UserProfileSubMenuBtns">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//a[@id= 'logoutbutton']/following-sibling::div/a</Value>
+        </Browser>
+      </Object>
+    </Page>
+    <Page name="Hr">
+      <Object name="SelectSearchCategory">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='search_val']</Value>
+        </Browser>
+      </Object>
+      <Object name="SearchValueField">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='search_str']</Value>
+        </Browser>
+      </Object>
+      <Object name="SearchSelectRole">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='role_id']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="SearchBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@onclick = 'employeessearch();']</Value>
+        </Browser>
+      </Object>
+      <Object name="ClearSearchBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@onclick = 'clearSearchData();']</Value>
+        </Browser>
+      </Object>
+      <Object name="ViewMoreBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'viewmorediv']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'employees_search']//div[@class = 'li-emp-details']/span[@class ='emp-name']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeDesignation">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'employees_search']//div[@class='list-item']//div[@class = 'li-emp-details']/span[@class ='emp-designation']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeDept">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'employees_search']//div[@class='list-item']//div[@class = 'li-emp-details']/span[@class ='emp-department']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeId">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'employees_search']//div[@class='list-item']//div[@class = 'li-body']//li//i[@class = 'fa fa-user']/following-sibling::span</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeEmail">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'employees_search']//div[@class='list-item']//div[@class = 'li-body']//li//i[@class = 'fa fa-envelope']/following-sibling::span</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeePhone">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'employees_search']//div[@class='list-item']//div[@class = 'li-body']//li//i[@class = 'fa fa-phone']/following-sibling::span</Value>
+        </Browser>
+      </Object>
+      <Object name="AddEmployeeBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='actions_div']/a[contains(.,'Add')]</Value>
+        </Browser>
+      </Object>
+      <Object name="ImportFormatBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='actions_div']/a[contains(.,'Import format')]</Value>
+        </Browser>
+      </Object>
+      <Object name="ImportEmployeesBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='actions_div']/span[contains(.,'Import Employees')]</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeActionsBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='dropdown']//button[@class='dropbtn']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeActionsEdit">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='dropdown']//button[@class='dropbtn']/following-sibling::div//a[contains(.,'Edit')]</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeActionsView">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='dropdown']//button[@class='dropbtn']/following-sibling::div//a[contains(.,'View')]</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeViewFirstName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='main_view_sub_right']/div[contains(.,'First Name')]/following-sibling::div</Value>
+        </Browser>
+      </Object>
+      
+      <!-- Parameter the Menu name to be clicked -->
+      <Object name="HrAddEmployeeSubModules">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='left-block-ui-data']//ul/li[contains(.,'{0}')]</Value>
+        </Browser>
+      </Object>
+      <Object name="OfficialTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='empdetails']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffEmpCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='employeeId']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffEmpId">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='employeeNumId']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffPrefix">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='prefix_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='prefix_id']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="OffFirstName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@name='firstname']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffLastName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@name='lastname']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffModeofEmployment">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='modeofentry']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffModeofEmploymentOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='modeofentry']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="OffRole">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='emprole']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffRoleOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='emprole']/option</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="OffEmail">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='emailaddress']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffBusinessUnit">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='businessunit_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffBusinessUnitOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='businessunit_id']/option</Value>
+        </Browser>
+      </Object>
+
+      <Object name="OffDepartment">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='department_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffDepartmentOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='department_id']/option</Value>
+        </Browser>
+      </Object>
+
+      <Object name="OffReportingManager">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='reporting_manager']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffReportingManagerOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='reporting_manager']/option</Value>
+        </Browser>
+      </Object>
+
+
+
+      <Object name="HolidaysTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='emp_holidays']</Value>
+        </Browser>
+      </Object>
+      <Object name="HdayHolidayGroup">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_holiday_group']</Value>
+        </Browser>
+      </Object>
+      <Object name="HdaySelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='holiday_group']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="HdayHolidaysTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='empholidays']</Value>
+        </Browser>
+      </Object>
+      <Object name="HdaySaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="HdayCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id='Cancel']</Value>
+        </Browser>
+      </Object>
+
+
+      <Object name="ContactTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='empcommunicationdetails']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPersonalEmail">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='personalemail']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentStreetAddress">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='perm_streetaddress']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentCountry">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_perm_country']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='perm_country']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentState">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_perm_state']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentStateOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='perm_state']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentCity">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_perm_city']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentCityOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='perm_city']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="CntPermanentPostalCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='perm_pincode']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntCheckbox">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='address_flag' and @type ='checkbox']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntCurrentStreetAddress">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='current_streetaddress']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntCurrentCountry">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_current_country']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntCurrentState">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_current_state']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntCurrentCity">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_current_city']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntCurrentPostalCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='current_pincode']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='emergency_name']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntEmail">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='emergency_email']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntNumber">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='emergency_number']</Value>
+        </Browser>
+      </Object>
+      <Object name="CntSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="SkillsTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='emp_skills']</Value>
+        </Browser>
+      </Object>
+      <Object name="SkillsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='empskills']</Value>
+        </Browser>
+      </Object>
+      <Object name="SkillsAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="SklSkill">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='skillname' and @name='skillname']</Value>
+        </Browser>
+      </Object>
+      <Object name="SklYearsOfExperience">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='yearsofexp' and  @name='yearsofexp' ]</Value>
+        </Browser>
+      </Object>
+      <Object name="SklCompetencyLevel">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_competencylevelid']</Value>
+        </Browser>
+      </Object>
+      <Object name="SklSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_competencylevelid']/following-sibling::select[@id='competencylevelid']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="SklSkillLastUsedYear">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='year_skill_last_used' and @name='year_skill_last_used']</Value>
+        </Browser>
+      </Object>
+      <Object name="SklSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="SklCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[contains(.,'Cancel')]</Value>
+        </Browser>
+      </Object>
+      <Object name="SklCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@title='close']/span[1]</Value>
+        </Browser>
+      </Object>
+
+
+
+      <Object name="MedicalClaimsTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='medical_claims']</Value>
+        </Browser>
+      </Object>
+      <Object name="MedicalClaimsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='medicalclaims']</Value>
+        </Browser>
+      </Object>
+      <Object name="MedicalClaimsAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="MedicalClaimsType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_type']</Value>
+        </Browser>
+      </Object>
+      <Object name="MedClaimsSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//ul[@class='select2-results']//div/span</Value>
+        </Browser>
+      </Object>
+      <Object name="MedicalClaimsCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@title='close']</Value>
+        </Browser>
+      </Object>
+
+
+      <Object name="DependencyTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='dependency_details']</Value>
+        </Browser>
+      </Object>
+      <Object name="DependencyTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='dependencydetails']</Value>
+        </Browser>
+      </Object>
+      <Object name="DependencyAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdDependentName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='dependent_name' and @name='dependent_name']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdDependentRelation">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_dependent_relation']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//ul[@class='select2-results']//div/span</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdDependentCustodyCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_dependent_custody']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdDependentDOB">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='dependent_dob' and @name='dependent_dob']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdDependentAge">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='dependent_age']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[contains(.,'Cancel')]</Value>
+        </Browser>
+      </Object>
+      <Object name="DpdCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@title='close']</Value>
+        </Browser>
+      </Object>
+
+
+
+      <Object name="VisaImmigrationTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='visadetails']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmigrationTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='visaandimmigrationdetails']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmigrationAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmPassportNumber">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='passport_number' and @name='passport_number']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmPassportIssueDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='passport_issue_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmPassportExpiryDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='passport_expiry_date' and @name='passport_expiry_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmVisaTypeCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='visa_type' ]</Value>
+        </Browser>
+      </Object>
+
+      <Object name="VisaImmVisaNumber">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='visa_number' and @name='visa_number' ]</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmVisaIssueDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='visa_issue_date' and @name='visa_issue_date' ]</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmVisaExpiryDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='visa_expiry_date' and @name='visa_expiry_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmI9Status">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='inine_status' and @name='inine_status']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmI9ReviewDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='inine_review_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmIssuingAuthority">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='issuing_authority' ]</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmI94Status">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='ininetyfour_status' and @name='ininetyfour_status' ]</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmI94ExpiryDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='ininetyfour_expiry_date' ]</Value>
+        </Browser>
+      </Object>
+
+      <Object name="VisaImmSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[contains(.,'Cancel')]</Value>
+        </Browser>
+      </Object>
+      <Object name="VisaImmCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@title='close']</Value>
+        </Browser>
+      </Object>
+
+
+      <Object name="AdditonalDetailsTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//li[@id='emp_additional']</Value>
+        </Browser>
+      </Object>
+      <Object name="AdditonalDetailsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='empadditionaldetails']</Value>
+        </Browser>
+      </Object>
+      <Object name="AdditonalDetailsAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlServedinMilitary">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_military_status']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//ul[@class='select2-results']//div/span</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlCountriesServed">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_countries_served']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlBranchofService">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='branch_service' and @name='branch_service']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlRankAchieved">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='rank_achieved' ]</Value>
+        </Browser>
+      </Object>
+      <Object name="AdDtlFrom">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='from_date' and @name='from_date']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="AddDtlTo">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='to_date' and @name='to_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlSpecialTrainings">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id='special_training']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlAwardsHonorsRecieved">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id='awards']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlStatusofDischarge">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_discharge_status']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="AddDtlMilitaryServiceNumber">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='service_number']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlCurrentEndingRank">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='rank']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlMilitaryVerificationReport">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='verification_report']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlMilitaryServiceType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_military_servicetype']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlVeteranStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_veteran_status']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[contains(.,'Cancel')]</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDtlCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@title='close']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="OffJobtitle">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_jobtitle_id']/a/span[contains(.,'Select Job Title')]</Value>
+        </Browser>
+      </Object>
+      <Object name="OffEmpStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='emp_status_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffEmpStatusOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='emp_status_id']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="Offdateofjoining">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='date_of_joining']</Value>
+        </Browser>
+      </Object>
+      <Object name="dateofconfo">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='date_of_confirmation']</Value>
+        </Browser>
+      </Object>
+      <Object name="dateofleaving">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='date_of_leaving']</Value>
+        </Browser>
+      </Object>
+      <Object name="Yearsofexperience">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='years_exp']</Value>
+        </Browser>
+      </Object>
+      <Object name="WorkTelPhonenum">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='office_number']</Value>
+        </Browser>
+      </Object>
+      <Object name="Extension">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='extension_number']</Value>
+        </Browser>
+      </Object>
+      <Object name="Fax">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='office_faxnumber']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="OffSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id = 'submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="OffCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id ='Cancel']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="Docname">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='document_name']</Value>
+        </Browser>
+      </Object>
+      <Object name="UploadAttachment">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='ajax-upload-id-1592993605056']</Value>
+        </Browser>
+      </Object>
+      <Object name="Leavecancelbtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id ='Cancel']</Value>
+        </Browser>
+      </Object>
+      <Object name="Leavesavebtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id ='Save']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="Leave">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//table[@class='requisition-table employee_appraisal-table']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="PersonalGender">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_genderid']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalGenderSelect">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='genderid']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalMartialstatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_maritalstatusid']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalMartialSelect">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='maritalstatusid']/option</Value>
+        </Browser>
+      </Object>
+
+      <Object name="PersonalNationality">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_nationalityid']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="PersonalNationalityOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='nationalityid']/option</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="PersonalEthiniccode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_ethniccodeid']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalEthiniccodeOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='ethniccodeid']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="Personalraceccode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_racecodeid']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalraceccodeOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='racecodeid']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalLanguage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_languageid']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalLanguageOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='languageid']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalDateofbirth">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='dob']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalBloodgroup">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='bloodgroup']</Value>
+        </Browser>
+      </Object>
+      <Object name="PersonalSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id='submitbuttons']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="JobHistoryDepartment">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_department']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistorySelect">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='select2-drop']//ul//div/span</Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistoryJobtittle">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value> </Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistorySelectposition">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_positionheld'] </Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistoryFromdate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='start_date'] </Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistoryTodate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='end_date'] </Value>
+        </Browser>
+      </Object>
+
+      <Object name="JobHistoryClient">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_client'] </Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistoryVendor">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='vendor']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistoryAmntreceived">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='received_amount'] </Value>
+        </Browser>
+      </Object>
+      <Object name="JobHistoryAmntpaid">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='paid_amount']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@title ='Add']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="ExperienceCompname">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value> //div[@class='division loca_state_div']//input</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceCompwebsite">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='division']//input[@id='comp_website'] </Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceDesignation">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='designation']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceFromdate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='division']//input[@id='from_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceTodate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='division']//input[@id='to_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceReasonforleaving">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='division']//textarea</Value>  		//usin tag name
+        </Browser>
+      </Object>
+      <Object name="ExperienceReferrername">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='reference_name']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceReferenceContact">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='reference_contact']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceFererenceEmail">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='reference_email']</Value>
+        </Browser>
+      </Object>
+      <Object name="ExperienceSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="EducationAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@title ='Add']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationLevel">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_educationlevel']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationLevelOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_educationlevel']/following-sibling::select[@id='educationlevel']/option</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="EducationInstititutionName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='institution_name' and @name='institution_name']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationCourse">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='course' and @name ='course']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationFromDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='from_date' and @ class='brdr_none hasDatepicker']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationToDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='to_date' and @ class='brdr_none hasDatepicker']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationPercentage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@name='percentage' and @id='percentage']</Value>
+        </Browser>
+      </Object>
+      <Object name="EducationSavebtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="TrainingCertificationCoursename">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='course_name' and @name='course_name'] </Value>
+        </Browser>
+      </Object>
+      <Object name="TrainingCertificationCourseLevel">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='course_level' and @name='course_level'] </Value>
+        </Browser>
+      </Object>
+      <Object name="TrainingCertification_CourseOffBy">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='course_offered_by' and @name='course_offered_by'] </Value>
+        </Browser>
+      </Object>
+      <Object name="TrainingCertificationDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id='description'] </Value>
+        </Browser>
+      </Object>
+      <Object name="TrainingCertificationCerfName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='certification_name' and @name='certification_name'] </Value>
+        </Browser>
+      </Object>
+      <Object name="TrainingCertificationIssuedDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='issued_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayGroupBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value ='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayGrpGroupName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='groupname']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayGrpDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='description']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayGrpSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidayGroupTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='holidaygroups']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='holidaydates']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value ='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysAddHolidayName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='holidayname']</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysAddHolidayDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='holidaydate']</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysConfirmationYes">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'popup_container']//div[@id = 'popup_panel']/input[@id = 'popup_ok']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='holidayname']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='description']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayGroup">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='groupid']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayGroupOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='groupid']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidaySaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddHolidayDateBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='holidaydate']</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysLastPageBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_holidaydates']//a[@class = 'last']</Value>
+        </Browser>
+      </Object>
+      <Object name="ManageHolidaysNextPageBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_holidaydates']//a[@class = 'nextNew']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="LeaveManagementOptionsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_leavemanagement']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementOptionsLastPage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_leavemanagement']//a[@class = 'last']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementOptionsNextPage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_leavemanagement']//a[@class = 'nextNew']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddBussUnitName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='businessunit']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddDepartment">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='department_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddCalenderStartMnth">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='cal_startmonth']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddWeekendDay1">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='weekend_startday']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddWeekendDay2">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='weekend_endday']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddHalfDayRequests">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='is_halfday']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddAllowLeaveTransfers">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='is_leavetransfer']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddSkipHolidays">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='is_skipholidays']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddHrManager">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='hrmanager']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='description']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddWorkingHrs">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='hours_day']</Value>
+        </Browser>
+      </Object>
+      <Object name="LeaveManagementAddSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="JobTitlesAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='grid_jobtitles']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobTitleCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='jobtitlecode']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobTitle">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='jobtitlename']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id='jobdescription']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobMinExpRequired">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='minexperiencerequired']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobPayGrade">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='jobpaygradecode']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobPayFrequency">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='jobpayfrequency']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobComments">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id='comments']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddJobsubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="PositionsAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="PositionsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='positions']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="PositionsTableLastPage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'pagination_positions']//a[@class = 'last']</Value>
+        </Browser>
+      </Object>
+      <Object name="PositionsTableNextPage">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'pagination_positions']//a[@class = 'nextNew']</Value>
+        </Browser>
+      </Object>
+      <Object name="PositionsAddJobTitle">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'jobtitleid']</Value>
+        </Browser>
+      </Object>
+      <Object name="PositionsAddPositionName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id = 'positionname']</Value>
+        </Browser>
+      </Object>
+      <Object name="PositionsAddPositionDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id = 'description']</Value>
+        </Browser>
+      </Object>
+      <Object name="JobTitlesAddPositionSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="RolesPrivilegesAddCheckBoxes">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='menu_accordion']//div[@class='menu_heading1']//input[@type ='checkbox']</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesAddRolesSideBarSelection">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='poc-ui-data-control']/div[@class = 'left-block-ui-data']//li[contains(.,'{0}')]</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesAddSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='grid_roles']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesAddRoleName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@ID='rolename']</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesAddRoleType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@ID='roletype']</Value>
+        </Browser>
+      </Object>
+      <Object name="RolesPrivilegesAddRoleDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@ID='roledescription']</Value>
+        </Browser>
+      </Object>
+    </Page>
+    <Page name="SelfService">
+      <Object name="LeaveRequestApplyLeaveButton">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@class = 'apply_button']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveRequestLeaveType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='leavetypeid']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveSelectLeaveType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_leavetypeid']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCompOffDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='comp_off_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveFromDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='from_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveToDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='to_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveLeaveForField">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='leaveday']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveSelectLeaveFor">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='leaveday']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveLeavesDaysCount">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='appliedleavesdaycount']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveReportingManager">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='rep_mang_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveReason">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='reason']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submitbutton']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveCancelBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id ='Canceldialog']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveRequestCloseBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@title = 'close']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeaveAllLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'filter_all']/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeavePendingLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'filter_pendingleaves']/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeaveCancelledLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'filter_cancelleaves']/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeaveApprovedLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'filter_approvedleaves']/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeaveRejectedLeaves">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'filter_rejectedleaves']/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeavePendingLeavesTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'pendingleaves']/table//tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeaveAllotmentLeaveTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//table[@class = 'requisition-table employee_appraisal-table']//tr</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='manageremployeevacations']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="MyLeaveCancelPopUpYes">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='popup_container']//div[@id ='popup_panel']/input[@id ='popup_ok']</Value>
+        </Browser>
+      </Object>
+      <Object name="CreateLeaveErrorLeaveType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>(//span[@id='errors-leavetypeid'])[2]</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveEditStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='s2id_managerstatus']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveEditStatusSelect">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'managerstatus']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveEditStatusSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'managerstatus']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveEditCommentsText">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='comments']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveEditSave">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@name ='submit']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveEditCancel">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//button[@id ='Cancel']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveNextbtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'pagination_manageremployeevacations']/a[@class = 'nextNew']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeLeaveLastPagebtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'pagination_manageremployeevacations']/a[@class = 'last']</Value>
+        </Browser>
+      </Object>
+      <Object name="ImpersonateLeaveSelectEmployee">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='s2id_leaveapplyingemployeeid']</Value>
+        </Browser>
+      </Object>
+      <Object name="ImpersonateLeaveSelectEmployeeSelect">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='leaveapplyingemployeeid']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="MyDetailsEmpCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Employee Code')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsCandidateName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Candidate Name')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsBusinessUnit">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Business Unit')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsReportingManager">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Reporting Manager')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsEmploymentStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Employment Status')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsJobTitle">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Job Title')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsDateOfJoining">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_left']/div[contains(.,'Date of Joining')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsEmail">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_right']/div[contains(.,'Email')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsPosition">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='total-form-controller view-form-detail']//div[@class ='main_view_sub_right']/div[contains(.,'Position')]/following-sibling::div/label</Value>
+        </Browser>
+      </Object>
+      <Object name="MyDetailsOfficialTab">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class ='left-block-ui-data']//li[contains(.,'Official')]</Value>
+        </Browser>
+      </Object>
+
+      <Object name="WebCheckInTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='checkin_checkout_list ']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="WebCheckInDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='checkin_checkout_list ']/h1</Value>
+        </Browser>
+      </Object>
+      <Object name="WebCheckInCheckInCheckOutBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submit_button']</Value>
+        </Browser>
+      </Object>
+      <Object name="WebCheckInTimer">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@class='checkin_checkout_list ']//h1[@id = 'timer']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationRegularizationDay">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='regularize_day']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationCheckInTime">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='checkin_time']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationCheckOutDay">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='regularize_checkoutday']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationCheckOutTime">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='checkout_time']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='description']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationHours">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='hours']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submit_button']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationReqTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='regularization']/table//tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationTimeHours">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//td[@class = 'ui-timepicker-hours']//table[@class = 'ui-timepicker']//tr/td[@data-hour ='{0}']</Value>
+        </Browser>
+      </Object>
+      <Object name="MyRegularizationTimeMinutes">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//td[@class = 'ui-timepicker-minutes']//table[@class = 'ui-timepicker']//tr/td[@data-minute='{0}']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeRegularizationRequestTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='manageremployeeregularization']/table//tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeRegularizationEditStatusField">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='s2id_regularizationstatus']</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeRegularizationEditStatusSelectOptions">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='regularizationstatus']/option</Value>
+        </Browser>
+      </Object>
+      <Object name="EmployeeRegularizationSaveBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@name ='submit_button']</Value>
+        </Browser>
+      </Object>
+
+      <Object name="AssignWebCheckInSelectEmpName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='selectemployee']</Value>
+        </Browser>
+      </Object>
+      <Object name="AssignWebCheckInSelectBy">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='selectby']</Value>
+        </Browser>
+      </Object>
+      <Object name="AssignWebCheckInStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='webcheckinstatus']</Value>
+        </Browser>
+      </Object>
+      <Object name="AssignWebCheckInSubmitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='submit_button']</Value>
+        </Browser>
+      </Object>
+    </Page>
+    <Page name="Appraisals">
+		<Object name="AppaddBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@class='sprite addrecord']</Value>
+				</Browser>
+			</Object>
+			<Object name="Step1Initlize">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//li[@class='step_1 incomplete active']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppSelBussUnitDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='businessunit_id']</Value>
+				</Browser>
+			</Object>
+		<Object name="AppSelBussUnit">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@class='select2-result-label']/span</Value>
+				</Browser>
+			</Object>
+			<Object name="AppSelDepDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='department_id']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppSelDep">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//li[@class='select2-results-dept-0 select2-result select2-result-selectable']//span</Value>
+				</Browser>
+			</Object>
+			<Object name="AppYrRngFrmDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='from_year']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppYrRngFrm">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='from_year']/option</Value>
+				</Browser>
+			</Object>
+			<Object name="AppYrRngToDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='to_year']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppYrTo">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='to_year']/option</Value>
+				</Browser>
+			</Object>
+			<Object name="AppModeDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='appraisal_mode']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppModeList">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='appraisal_mode']/option</Value>
+				</Browser>
+			</Object>
+			<Object name="AppPeriod">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='appraisal_period']</Value>
+				</Browser>
+			</Object>
+    <Object name="AppEnableToDrpDwn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//select[@id='enable_step']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppStatusDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='s2id_status']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppStatusList">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@class='select2-result-label']</Value>
+				</Browser>
+			</Object>
+			
+			<Object name="AppEnableToList">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@class='select2-result-label']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppMngrDueDate">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='managers_due_date']</Value>
+				</Browser>
+			</Object>
+    <Object name="AppEmployeeDueDate">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='employee_due_date']</Value>
+      </Browser>
+    </Object>
+			<Object name="AppElgibltyDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='s2id_autogen19']</Value>
+				</Browser>
+			</Object>   
+      <Object name="AppElgibltySelectAll">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//span[@id='selectallspan']</Value>
+				</Browser>
+			</Object> 
+			<Object name="AppElgibltyList">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='s2id_eligibility']/ul/li</Value>
+				</Browser>
+			</Object>
+			<Object name="AppParameters">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='s2id_category_id']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppRatingsDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='appraisal_ratings']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppRatingsDrpDwnList">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='appraisal_ratings']/option</Value>
+				</Browser>
+			</Object>
+		<Object name="AppSaveBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='submitbutton']</Value>
+				</Browser>
+			</Object>
+			<Object name="Step2ConfLinMngr">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//li[@id='initstep_2']</Value>
+				</Browser>
+			</Object>
+			<Object name="AppDetls">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@class='appdetails']</Value>
+				</Browser>
+			</Object>
+			<Object name="ChoseByOrgHierchy">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='id_set_report']</Value>
+				</Browser>
+			</Object>
+			
+			<Object name="ConfPopUp">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='popup_ok']</Value>
+				</Browser>
+			</Object>
+			<Object name="L1MngrTbl">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='iddiv_mcontent']</Value>
+				</Browser>
+			</Object>
+			<Object name="SaveBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='btnsaveorg']</Value>
+				</Browser>
+			</Object>
+			<Object name="Step3ConfgAppParm">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//li[@class='step_3 incomplete']</Value>
+				</Browser>
+			</Object>
+			<Object name="AllEmplyessBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@class='button_div']</Value>
+				</Browser>
+			</Object>
+			
+			<Object name="AllQustnTbl">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//table[@class='requisition-table employee_appraisal-table']</Value>
+				</Browser>
+			</Object>
+			
+			<Object name="SubmitandInitlizeBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//button[@id='submitbuttons' and @onclick='saveInitilize(1)']</Value>
+				</Browser>
+			</Object>
+    <Object name="AppraisalParametersAdd">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@class='sprite addrecord'] </Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalParametersParameter">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='category_name'] </Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalParametersDescription">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='description']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalParametersWeightage">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='weightage']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalParameterssave">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='submitbutton']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalParametersCancel">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//button[@id='Cancel']</Value>
+      </Browser>
+      </Object>
+      <Object name="AppraisalParametersTable">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='appraisalcategory']/table/tbody/tr</Value>
+      </Browser>
+        </Object>
+    
+    <Object name="AppraisalQuestionsAddSelectParam">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='s2id_pa_category_id']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsAddSelectParamOption">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@class='select2-result-label']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsQuestion">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='question_0']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsDescription">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='description_0']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsAddQuesBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//span[@onclick='addAppQuestionDiv()']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsAddQuesQuestion">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='question_0' and @class='cls_service_request_name']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsAddQuesDescription">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='description_0' and @name='description[]']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppraisalQuestionsSave">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//button[@id='submitbuttons']</Value>
+      </Browser>
+    </Object>
+     <Object name="AppraisalQuestionsTable">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='appraisalquestions']/table/tbody/tr</Value>
+      </Browser>
+        </Object>
+    <Object name="AppraisalQuestionsCancel">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//button[@id='Cancel']</Value>
+      </Browser>
+    </Object>
+    <Object name="SkillsTable">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='appraisalskills']</Value>
+      </Browser>
+    </Object>
+    <Object name="SkillsAddBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@value='Add Record']</Value>
+      </Browser>
+    </Object>
+    <Object name="SkillsAddSkill">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='skill_name']</Value>
+      </Browser>
+    </Object>
+    <Object name="SkillsAddDescription">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='description']</Value>
+      </Browser>
+    </Object>
+    <Object name="SkillsAddSaveBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='submitbutton']</Value>
+      </Browser>
+    </Object>
+    <Object name="SkillsAddCancelBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//button[@id='Cancel']</Value>
+      </Browser>
+    </Object>
+    <Object name="RatingsTable">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='appraisalratings']</Value>
+      </Browser>
+    </Object>
+    <Object name="RatingsAddBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@value='Add Record']</Value>
+      </Browser>
+    </Object>
+    <Object name="RatingsAddBusinessUnit">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='s2id_bunit_id']</Value>
+      </Browser>
+    </Object>
+    <Object name="RatingsAddSelectOptions">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//ul[@class='select2-results']//div/span</Value>
+      </Browser>
+    </Object>
+    <Object name="RatingsAddDepartment">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='s2id_dept_id']</Value>
+      </Browser>
+    </Object>
+
+    <Object name="ManagerAppraisalTable">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='appraisalmanager']</Value>
+      </Browser>
+    </Object>
+
+     <Object name="EmployeeSelfAppraisalsParametersList">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//ul[@role='tablist']/li</Value>
+      </Browser>
+    </Object>
+    
+    <Object name="EmployeeSelfAppraisalsSendToL1ManagerBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@value='Send to L1 Manager']</Value>
+      </Browser>
+    </Object>
+    
+ <Object name="ManagerAppraisalRatingExpandBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@id='iddiv_collapse_0']</Value>
+      </Browser>
+    </Object>
+    <Object name="ManagerAppraisalsParametersList">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//ul[@role='tablist']/li</Value>
+      </Browser>
+    </Object>
+    <Object name="ManagerAppraisalsOverallRating">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//textarea[@id='idconsol_comments_0']</Value>
+      </Browser>
+    </Object>
+    <Object name="ManagerAppraisalsSubmitBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='idbtn_submit_0']</Value>
+      </Browser>
+    </Object>
+    <Object name="ManagerAppraisalsPrintBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//a[@class='uploadbut uploadbutsel']</Value>
+      </Browser>
+    </Object>
+    <Object name="ConfAppModeOptions">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//div[@class='select2-result-label']/span</Value>
+      </Browser>
+    </Object>
+    <Object name="AppMangSearchEmp">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//input[@id='search_emp_by_name']</Value>
+      </Browser>
+    </Object>
+    <Object name="AppMangSearchGoBtn">
+      <Browser Value="chrome">
+        <FindBy>XPath</FindBy>
+        <Value>//button[@class='search_go']</Value>
+      </Browser>
+    </Object>
+    
+
+  </Page>
+    <Page name="Recruitments">
+      <Object name="RecruitOpenaddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@class='sprite addrecord']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitAddRequisitionCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='requisition_code']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenBusinessUnitDrpDwn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id= 'business_unit']</Value>
+        </Browser>
+      </Object>
+       <Object name="RecruitOpenDepDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='department']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitOpenRepMngr">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='reporting_id']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitOpenApprove1">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='approver1']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenDueDate">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='onboard_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenJobTitle">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id='jobtitle']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitOpenPosition">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='position_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenNoofPostn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='req_no_positions']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenBillingType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='billing_type']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenPositionType">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='position_type']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenMinReqExp">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='req_exp_years']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenEmpStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='s2id_emp_type']']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenUploadFile">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@name='job-description-file']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitOpenSubBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='submitbutton']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="RecruitCandAddBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value='Add Record']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="RecruitCandReqIdDrpDwn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='requisition_id']</Value>
+        </Browser>
+      </Object>
+      
+      <Object name="RecruitCandFirstName">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='candidate_firstname']</Value>
+				</Browser>
+			</Object>
+      
+       <Object name="RecruitCandLastName">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='candidate_lastname']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitCandSource">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id ='source']</Value>
+				</Browser>
+			</Object>
+      
+     <Object name="RecruitCandEmail">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='emailid']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitCandContNum">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='contact_number']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitCandSkillSet">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//textarea[@id='skillset']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitCandSav">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='submit-button1']//input [@value='Save']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitCandSavSchd">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='submit-button1']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitInterviewAddBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@value='Add Record']</Value>
+				</Browser>
+			</Object>
+
+      <Object name="RecruitInterviewAddReqId">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='req_id']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitInterviewCandNam">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id ='candidate_name']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewLocation">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='int_location']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewType">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//select[@id ='interview_mode']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewDate">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='interview_date']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewName">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='interview_round']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitInterviewRoundActnEdit">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//a[@class='sprite edit']</Value>
+				</Browser>
+			</Object>
+      
+      <Object name="RecruitInterviewRoundFeedback">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//textarea[@id='interview_feedback']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewRoundInterviewerComments">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id='interview_comments']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitInterviewRoundStatus">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@id='s2id_round_status']/following-sibling::select[@id='round_status']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewUpdateBtn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//input[@id='submitbutton']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewSelectDrpDwn">
+				<Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//div[@class='select2-container']/following-sibling::select</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitInterviewSchdulNexRound">
+      <Browser Value="chrome">
+					<FindBy>XPath</FindBy>
+					<Value>//li[@class='select2-results-dept-0 select2-result select2-result-selectable']</Value>
+				</Browser>
+			</Object>
+      <Object name="RecruitmentOpeningsPositionsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='requisition']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentOpeningsPositionsApproverStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='req_status']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentInterviewsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='scheduleinterviews']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentInterviewRoundsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='interviewrounds']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentInterviewDetailsStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='interview_status']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentInterviewDetailsCandidateStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='cand_status']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentShortlistedSelectedCandidatesTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='shortlistedcandidates']/table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentShortlistedSelectedCandidatesCandidateStatus">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='selectionstatus']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetails">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='tabs']//a[@id='candidate-form']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsQualification">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='qualification']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsExperince">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='experience']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsCustLocation">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id ='cand_location']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsCountry">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='country']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsState">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='state']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsCity">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id ='city']</Value>
+        </Browser>
+      </Object>
+      <Object name="RecruitmentAddCandidatesEnterCandateDetailsPostalCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id ='pincode']</Value>
+        </Browser>
+      </Object>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Page>
+    <Page name="Organization">
+      <Object name="BusinessUnitsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id ='grid_businessunits']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="BusinessUnitsTableLastPageBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_businessunits']//a[@class = 'last']</Value>
+        </Browser>
+      </Object>
+      <Object name="BusinessUnitsTableNextPageBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_businessunits']//a[@class = 'nextNew']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value = 'Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id = 'unitname']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitUnitCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id = 'unitcode']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id = 'description']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitStartedOn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id = 'start_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitTimeZone">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'timezone']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitCountry">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'country']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitState">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'state']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitCity">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'city']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddBusinessUnitStreetAdd1">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id = 'address1']</Value>
+        </Browser>
+      </Object>
+      <Object name="DepartmentsTable">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id='departments']//table/tbody/tr</Value>
+        </Browser>
+      </Object>
+      <Object name="DepatmentsTableLastPageBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_departments']//a[@class = 'last']</Value>
+        </Browser>
+      </Object>
+      <Object name="DepatmentsTableNextPageBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//div[@id = 'grid_departments']//a[@class = 'nextNew']</Value>
+        </Browser>
+      </Object>
+      <Object name="DepatmentsAddDepartmentBtn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@value = 'Add Record']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsDepName">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='deptname']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsBusinessUnit">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id='unitid']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsDepCode">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id='deptcode']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsDescription">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id = 'description']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsStartedOn">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//input[@id = 'start_date']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsTimeZone">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'timezone']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsCountry">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'country']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsState">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'state']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsCity">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//select[@id = 'city']</Value>
+        </Browser>
+      </Object>
+      <Object name="AddDepatmentsStreetAdd1">
+        <Browser Value="chrome">
+          <FindBy>XPath</FindBy>
+          <Value>//textarea[@id = 'address1']</Value>
+        </Browser>
+      </Object>
+    </Page>
+  </Module>
+</ApplicationPages>
